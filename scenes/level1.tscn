@@ -540,7 +540,7 @@ position = Vector2(805, 272)
 position = Vector2(379, 224)
 
 [node name="cherie7" parent="sceneObject/cherie group" instance=ExtResource("5_prosy")]
-position = Vector2(139, 258)
+position = Vector2(140, 270)
 
 [node name="cherie8" parent="sceneObject/cherie group" instance=ExtResource("5_prosy")]
 position = Vector2(995, 420)

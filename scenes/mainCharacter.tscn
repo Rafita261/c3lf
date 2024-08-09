@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://d3te40umt80cn"]
+[gd_scene load_steps=32 format=3 uid="uid://d3te40umt80cn"]
 
 [ext_resource type="Texture2D" uid="uid://bx154m4acva2s" path="res://Jump (32x32).png" id="1_hafrs"]
 [ext_resource type="Script" path="res://scenes/mainCharacter.gd" id="1_yvcy8"]
@@ -187,8 +187,15 @@ animations = [{
 "speed": 20.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ibwwi"]
-size = Vector2(17.3333, 22.5)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p5hvl"]
+radius = 9.0
+height = 18.6667
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qa66y"]
+size = Vector2(11.6667, 7.66667)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_urx4g"]
+size = Vector2(17.6667, 3.66667)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 scale = Vector2(3, 3)
@@ -196,6 +203,7 @@ script = ExtResource("1_yvcy8")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
+position = Vector2(10, 8.33333)
 scale = Vector2(0.791667, 0.864583)
 sprite_frames = SubResource("SpriteFrames_s35db")
 autoplay = "default"
@@ -203,5 +211,13 @@ frame_progress = 0.753191
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2.58332)
-shape = SubResource("RectangleShape2D_ibwwi")
+position = Vector2(9.66667, 9.66667)
+shape = SubResource("CapsuleShape2D_p5hvl")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(9.5, 18.5)
+shape = SubResource("RectangleShape2D_qa66y")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(9.83333, 17)
+shape = SubResource("RectangleShape2D_urx4g")
