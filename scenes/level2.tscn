@@ -591,26 +591,6 @@ text = "Points : 0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="quitlabel" type="Label" parent="UI/Panel"]
-unique_name_in_owner = true
-texture_filter = 1
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 260.0
-offset_top = 8.0
-offset_right = 260.0
-offset_bottom = 8.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0.576471, 0.945098, 0.152941, 1)
-theme_override_colors/font_outline_color = Color(0.00392157, 0.00392157, 0.00784314, 1)
-theme_override_font_sizes/font_size = 21
-text = "Points : 0"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="Finish" parent="." instance=ExtResource("6_m2y03")]
 position = Vector2(3340, 980)
 target_level = ExtResource("6_t7fjj")
